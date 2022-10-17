@@ -1,0 +1,56 @@
+.divCard {
+  width: 23vh;
+  height: 21vh;
+  background-color: #0000000c;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+
+  margin: 2vh;
+  background: rgba(46, 44, 44, 0);
+  transition: all 300ms;
+}
+
+.divCard:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.banderaCard {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 15vh;
+  height: 10vh;
+  position: relative;
+  left: 4vh;
+}
+
+.nameCard {
+  width: 25vh;
+  margin-bottom: 1vh;
+  margin-top: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  font-size: 2.2vh;
+  color: #e0bb20;
+}
+
+.continenteCard {
+  width: 23vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2.2vh;
+  color: #e0bb20;
+  text-decoration: none;
+}

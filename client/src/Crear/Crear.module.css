@@ -1,0 +1,374 @@
+.general {
+  height: 100vh;
+  background-image: url(../imagenes/fondocrear.jpg);
+  background-size: 100%;
+}
+
+.formulario {
+  width: 60vh;
+  height: 60vh;
+  background-color: rgba(7, 3, 3, 0.455);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 104vh;
+  top: 28vh;
+}
+.name {
+  position: absolute;
+  top: 5vh;
+  left: 28vh;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid #e0bb20;
+  font-size: 14px;
+
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #e0bb20;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.name:hover {
+  background: #84181867;
+  box-shadow: 0 0 30px 5px #e0bb20;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.dificultad {
+  width: 5vh;
+  position: absolute;
+  top: 13vh;
+  left: 28vh;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid #e0bb20;
+  font-size: 14px;
+
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #e0bb20;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.dificultad:hover {
+  background: #84181867;
+  box-shadow: 0 0 30px 5px #e0bb20;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.duracion {
+  width: 5vh;
+  position: absolute;
+  top: 21vh;
+  left: 28vh;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid #e0bb20;
+  font-size: 14px;
+
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #e0bb20;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.duracion:hover {
+  background: #84181867;
+  box-shadow: 0 0 30px 5px #e0bb20;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.pais {
+  width: 29vh;
+  position: absolute;
+  top: 29vh;
+  left: 28vh;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid #e0bb20;
+  font-size: 14px;
+
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #e0bb20;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.pais:hover {
+  background: #84181867;
+  box-shadow: 0 0 30px 5px #e0bb20;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.LabelNombre {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 6vh;
+  left: 2vh;
+}
+.LabelDificultad {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 14vh;
+  left: 2vh;
+}
+.LabelDuracion {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 22vh;
+  left: 2vh;
+}
+.LabelPais {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 30vh;
+  left: 2vh;
+}
+
+.LabelTemporadas {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 2vh;
+  top: 38vh;
+}
+
+.Verano {
+  position: absolute;
+  top: 39vh;
+  width: 2vh;
+  height: 2vh;
+  border: 1px solid #c8ccd4;
+
+  border-radius: 3px;
+  vertical-align: middle;
+  transition: background 0.1s ease;
+  cursor: pointer;
+}
+.Verano:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 7px;
+  height: 14px;
+  opacity: 0;
+  transform: rotate(45deg) scale(0);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+  transition-delay: 0.15s;
+}
+.acompVerano {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 36.5vh;
+  right: 21.5vh;
+}
+.Invierno {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 42vh;
+  width: 2vh;
+  height: 2vh;
+  border: 1px solid #c8ccd4;
+
+  border-radius: 3px;
+  vertical-align: middle;
+  transition: background 0.1s ease;
+  cursor: pointer;
+}
+.acompInvierno {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 39.5vh;
+  right: 20.5vh;
+}
+.Primavera {
+  position: absolute;
+  top: 45vh;
+  width: 2vh;
+  height: 2vh;
+  border: 1px solid #c8ccd4;
+
+  border-radius: 3px;
+  vertical-align: middle;
+  transition: background 0.1s ease;
+  cursor: pointer;
+}
+.acompPrimavera {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 43vh;
+  right: 19vh;
+}
+.Otoño {
+  position: absolute;
+  top: 48vh;
+  width: 2vh;
+  height: 2vh;
+  border: 1px solid #c8ccd4;
+
+  border-radius: 3px;
+  vertical-align: middle;
+  transition: background 0.1s ease;
+  cursor: pointer;
+}
+.acompOtoño {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 46vh;
+  right: 22vh;
+}
+.borrar {
+  position: absolute;
+  bottom: 3vh;
+  left: 3vh;
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #21212100;
+  border: 0.08em solid #e0bb20;
+  border-radius: 0.3em;
+  font-size: 1vh;
+}
+
+.borrar span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #841818;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #e0bb20;
+  border: 0.08em solid #e0bb20;
+  box-shadow: 0 0.4em 0.1em 0.019em #e0bb20;
+}
+
+.borrar span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #e0bb20;
+}
+
+.borrar span:not(hover) {
+  transition: all 1s;
+}
+
+.errorDificultad {
+  color: #c6bebe;
+  text-shadow: 0 0 5px #841818, 0 0 5px #841818;
+  position: absolute;
+  top: 16vh;
+  right: 12vh;
+}
+.errorDuracion {
+  color: #c6bebe;
+  text-shadow: 0 0 5px #841818, 0 0 5px #841818;
+  position: absolute;
+  top: 24vh;
+  right: 17vh;
+}
+.errorName {
+  color: #c6bebe;
+  text-shadow: 0 0 5px #841818, 0 0 5px #841818;
+  position: absolute;
+  top: 8vh;
+  right: 1vh;
+}
+.errorPais {
+  color: #c6bebe;
+  text-shadow: 0 0 5px #841818, 0 0 5px #841818;
+  position: absolute;
+  top: 32vh;
+  right: 1vh;
+}
+
+.crearAct {
+  position: absolute;
+  bottom: 3vh;
+  right: 3vh;
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #841818;
+  border: 0.08em solid #841818;
+  border-radius: 0.3em;
+  font-size: 1vh;
+}
+
+.crearAct span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #e0bb20;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #841818;
+  border: 0.08em solid #841818;
+  box-shadow: 0 0.4em 0.1em 0.019em #841818;
+}
+
+.crearAct span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #841818;
+}
+
+.crearAct span:not(hover) {
+  transition: all 1s;
+}
+.titulo1 {
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 18vh;
+  left: 40vh;
+}

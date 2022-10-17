@@ -1,0 +1,362 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../imagenes/353018.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+.slet {
+  background-color: rgba(0, 255, 255, 0);
+}
+.banderas {
+  width: 140vh;
+  height: 50vh;
+
+  position: absolute;
+  right: 25vh;
+  top: 19vh;
+  background-image: linear-gradient(163deg, #8418183e 0%, #e0ba2049 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.banderas:hover {
+  box-shadow: 0px 0px 30px 1px rgba(194, 2, 2, 0.3);
+}
+.banderas2 {
+  width: 140vh;
+  height: 50vh;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #1a1a1aae;
+  border-radius: 0;
+  transition: all 0.2s;
+}
+.banderas2:hover {
+  transform: scale(0.99);
+  border-radius: 20px;
+}
+
+.paginado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20vh;
+}
+.button {
+  width: 17vh;
+  position: absolute;
+  left: 32vh;
+  margin-left: 2vh;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: #e0bb20;
+  --animation-color: #841818;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 3vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover1 {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover1 {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+.alfabeto {
+  padding: 0.8em 1.8em;
+  border: 2px solid #e0bb20;
+  position: absolute;
+  left: 68vh;
+  overflow: hidden;
+
+  background-color: rgba(131, 136, 2, 0) !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #e0bb20;
+}
+
+.alfabeto::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #841818;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.alfabeto:hover::before {
+  width: 105%;
+}
+
+.alfabeto:hover {
+  color: #841818;
+}
+.poblacion {
+  padding: 0.8em 1.8em;
+  border: 2px solid #e0bb20;
+  position: absolute;
+  left: 84vh;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #e0bb20;
+}
+
+.poblacion::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #841818;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.poblacion:hover::before {
+  width: 105%;
+}
+
+.poblacion:hover {
+  color: #841818;
+}
+
+.actividad {
+  padding: 0.8em 1.8em;
+  border: 2px solid #e0bb20;
+  position: absolute;
+  left: 106vh;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #e0bb20;
+}
+
+.actividad::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #841818;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.actividad:hover::before {
+  width: 105%;
+}
+
+.actividad:hover {
+  color: #841818;
+}
+
+.continente {
+  padding: 0.8em 1.8em;
+  border: 2px solid #e0bb20;
+  position: absolute;
+  left: 128vh;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #e0bb20;
+}
+
+.continente::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #841818;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.continente:hover::before {
+  width: 105%;
+}
+
+.continente:hover {
+  color: #841818;
+}
+.botonBuscador {
+  position: absolute;
+  left: 160vh;
+  top: 6.5vh;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #841818;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #e0bb20;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.botonBuscador:hover {
+  background: #841818;
+  box-shadow: 0 0 30px 5px #841818;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.botonBuscador:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.botonBuscador::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #e0bb20;
+  box-shadow: 0 0 50px 30px #e0bb20;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.botonBuscador:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.buscador {
+  position: absolute;
+  left: 175vh;
+  top: 6.5vh;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #841818;
+  font-size: 14px;
+
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #e0bb20;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.buscador:hover {
+  background: #841818;
+  box-shadow: 0 0 30px 5px #841818;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.buscador:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.buscador::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #e0bb20;
+  box-shadow: 0 0 50px 30px #e0bb20;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.buscador:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
