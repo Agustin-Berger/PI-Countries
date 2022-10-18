@@ -14,7 +14,7 @@ export const BUSQUEDA = "BUSQUEDA";
 export const todosLosPaises = () => {
   console.log("entre");
   return async function (dispatch) {
-    const paises = await axios.get("http://localhost:3001/countries");
+    const paises = await axios.get("/countries");
     console.log("llegue a la axion ", paises);
     return dispatch({ type: ALLCOUNTRIES, payload: paises.data });
   };
@@ -23,7 +23,7 @@ export const todosLosPaises = () => {
 export const backup = () => {
   console.log("soy el back");
   return async function (dispatch) {
-    const paises = await axios.get("http://localhost:3001/countries");
+    const paises = await axios.get("/countries");
     console.log("llegue a la axion ", paises);
     return dispatch({ type: BACK, payload: paises.data });
   };
@@ -32,7 +32,7 @@ export const backup = () => {
 export const paisPorId = (id) => {
   console.log(id, "elid");
   return async function (dispatch) {
-    const paises = await axios.get(`http://localhost:3001/countries/${id}`);
+    const paises = await axios.get(`/countries/${id}`);
     console.log("accion", paises.data);
     return dispatch({ type: COUNTRY_ID, payload: paises.data });
   };
@@ -41,10 +41,7 @@ export const paisPorId = (id) => {
 export const crearActividad = (payload) => {
   console.log("creando actividad", payload);
   return async function (dispatch) {
-    const paises = await axios.post(
-      "http://localhost:3001/activities",
-      payload
-    );
+    const paises = await axios.post("/activities", payload);
     return dispatch({ type: CREAR_ACTIVIDAD, payload: paises.data });
   };
 };
@@ -59,9 +56,7 @@ export const ordenPoblacion = (value) => {
 
 export const actividades = () => {
   return async function (dispatch) {
-    const actividades = await axios.get(
-      "http://localhost:3001/activities_creadas"
-    );
+    const actividades = await axios.get("/activities_creadas");
     return dispatch({ type: ACTIVIDADES, payload: actividades.data });
   };
 };
@@ -76,9 +71,7 @@ export const filtradoContinentes = (value) => {
 export const busqueda = (value) => {
   console.log("aciooon", value);
   return async function (dispatch) {
-    const paises = await axios.get(
-      `http://localhost:3001/countries?name=${value}`
-    );
+    const paises = await axios.get(`/countries?name=${value}`);
     return dispatch({ type: BUSQUEDA, payload: paises.data });
   };
 };
