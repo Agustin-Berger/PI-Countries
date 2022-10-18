@@ -153,7 +153,7 @@ const rootReducer = (state = initialState, action) => {
 
     case FILTRO_CONTINENTE: {
       let value = action.payload;
-      let estado = state.countries;
+      let estado = state.backup;
       if (value !== "Continentes") {
         estado = estado.filter((e) => e.continente.includes(value));
       }

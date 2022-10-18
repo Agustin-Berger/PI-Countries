@@ -31,7 +31,7 @@ export default function Paises() {
     "Europe",
     "Africa",
     "Oceania",
-    "Antartic",
+    "Antarctic",
     "Asia",
   ];
 
