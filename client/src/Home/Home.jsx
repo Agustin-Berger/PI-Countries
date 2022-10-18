@@ -52,7 +52,7 @@ export default function Paises() {
     setActualiza(e.target.value);
   };
   const handlerClear = (e) => {
-    dispatch(backup());
+    dispatch(todosLosPaises());
   };
   const handlerActividad = (e) => {
     dispatch(paisesConActividades(e.target.value));
@@ -72,7 +72,6 @@ export default function Paises() {
     dispatch(busqueda(actualiza));
     setActualiza(e.target.value);
   };
-
   //----------------------------Paginado-------------------------------------------------------------//
 
   //
@@ -81,7 +80,7 @@ export default function Paises() {
   //
   //
   const [paginaActual, setPaginaActual] = useState(1);
-  const [paisPorPagina] = useState(10);
+  const [paisPorPagina, setPaisPorPagina] = useState(9);
   const indiceUltimoPais = paginaActual * paisPorPagina;
 
   //
@@ -90,7 +89,13 @@ export default function Paises() {
   const mapita = paise.slice(indicePrimerosPaises, indiceUltimoPais);
   //
   const paginado = (numeroDePagina) => {
-    setPaginaActual(numeroDePagina);
+    if (numeroDePagina === 1) {
+      setPaisPorPagina(9);
+      setPaginaActual(numeroDePagina);
+    } else {
+      setPaisPorPagina(10);
+      setPaginaActual(numeroDePagina);
+    }
   };
   //
   if (paise.length < 1) return <Loading />;
@@ -113,8 +118,8 @@ export default function Paises() {
             </span>
           </button>
           <select className={style.alfabeto} onChange={handleOrden}>
-            <option className={style.slet} value="Poblacion">
-              Poblacion
+            <option className={style.slet} value="Alfabetico">
+              Alfabetico
             </option>
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>

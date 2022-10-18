@@ -32,7 +32,6 @@ const rootReducer = (state = initialState, action) => {
         ...state,
 
         backup: action.payload,
-        countries: action.payload,
       };
     }
 
@@ -69,29 +68,43 @@ const rootReducer = (state = initialState, action) => {
       };
     }
     case ORDEN_AZ: {
-      const ordenado = action.payload;
-      let estado = state.countries;
-      let ordenados;
+      // const ordenado = action.payload;
+      // let estado = state.countries;
+      // let ordenados;
 
-      if (ordenado === "A-Z") {
-        ordenados = estado.sort((a, b) => {
-          if (a.name < b.name) return -1;
-          if (a.name > b.name) return 1;
-          return 0;
-        });
+      // // if (ordenado === "A-Z") {
+      // //   ordenados = estado.sort((a, b) => {
+      // //     if (a.name < b.name) return -1;
+      // //     if (a.name > b.name) return 1;
+      // //     return 0;
+      // //   });
+      // // }
+      // // if (ordenado === "Z-A") {
+      // //   ordenados = estado.sort((a, b) => {
+      // //     if (a.name > b.name) return -1;
+      // //     if (a.name < b.name) return 1;
+      // //     return 0;
+      // //   });
+      // // }
+      // if (ordenado === "Alfabetico") ordenados = state.backup;
+      // return {
+      //   ...state,
+      //   countries: ordenados,
+      // };
+
+      let copia = [...state.backup];
+      if (action.payload === "Alfabetico") copia = state.backup;
+      const aux = [...state.countries];
+      if (action.payload === "A-Z") {
+        aux.sort((a, b) => (a.name < b.name ? -1 : 1));
+        copia = aux;
       }
-      if (ordenado === "Z-A") {
-        ordenados = estado.sort((a, b) => {
-          if (a.name > b.name) return -1;
-          if (a.name < b.name) return 1;
-          return 0;
-        });
+      if (action.payload === "Z-A") {
+        aux.sort((a, b) => (a.name > b.name ? -1 : 1));
+        copia = aux;
       }
-      if (ordenado === "Poblacion") ordenados = state.backup;
-      return {
-        ...state,
-        countries: ordenados,
-      };
+
+      return { ...state, countries: copia };
     }
     case ORDEN_POBLACION: {
       const poblacion = state.countries;

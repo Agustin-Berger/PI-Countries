@@ -62,7 +62,7 @@ const countryName = async (name) => {
   // });
   let parametro = name;
   parametro = parametro.charAt(0).toUpperCase() + parametro.slice(1);
-  console.log(parametro, );
+  console.log(parametro);
   const allPais = await Country.findOne({
     where: {
       name: parametro,
@@ -153,9 +153,9 @@ const searchDb = async () => {
       attributes: ["nombre", "dificultad", "duracion", "temporada"],
     },
   });
+  console.log(countrymatch, "Sdasdasdasdsad");
   return countrymatch;
 };
-console.log(searchDb, "$$$$$$$$$$$$$$$$$$$$$$$$$$");
 const searchTotal = async () => {
   const datosApi = await country();
   const datosDb = await searchDb();
