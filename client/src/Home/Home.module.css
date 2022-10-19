@@ -95,8 +95,9 @@
 .alfabeto {
   padding: 0.8em 1.8em;
   border: 2px solid #e0bb20;
-  position: absolute;
-  left: 68vh;
+  position: relative;
+  left: 52vh;
+  top: 1vh;
   overflow: hidden;
   background-color: transparent;
 
@@ -134,8 +135,9 @@
 .poblacion {
   padding: 0.8em 1.8em;
   border: 2px solid #e0bb20;
-  position: absolute;
-  left: 84vh;
+  position: relative;
+  left: 55vh;
+  top: 1vh;
   overflow: hidden;
   background-color: transparent;
   text-align: center;
@@ -172,8 +174,9 @@
 .actividad {
   padding: 0.8em 1.8em;
   border: 2px solid #e0bb20;
-  position: absolute;
-  left: 106vh;
+  position: relative;
+  left: 62vh;
+  top: 1vh;
   overflow: hidden;
   background-color: transparent;
   text-align: center;
@@ -210,8 +213,9 @@
 .continente {
   padding: 0.8em 1.8em;
   border: 2px solid #e0bb20;
-  position: absolute;
-  left: 128vh;
+  position: relative;
+  left: 72vh;
+  top: 1vh;
   overflow: hidden;
   background-color: transparent;
   text-align: center;
@@ -245,9 +249,9 @@
   color: #841818;
 }
 .botonBuscador {
-  position: absolute;
-  left: 160vh;
-  top: 6.5vh;
+  position: relative;
+  left: 12vh;
+  top: 1.5vh;
   padding: 10px 20px;
   border-radius: 7px;
   border: 1px solid #841818;
@@ -304,9 +308,9 @@
 }
 
 .buscador {
-  position: absolute;
-  left: 175vh;
-  top: 6.5vh;
+  position: relative;
+  left: 15vh;
+  top: 1.5vh;
   padding: 10px 20px;
   border-radius: 7px;
   border: 1px solid #841818;
