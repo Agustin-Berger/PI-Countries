@@ -280,7 +280,7 @@ export default function CrearActividades() {
           <h4 className={style.cardTemporada}>
             Epoca del año:{input.temporada}
           </h4>
-          <h4 className={style.cardPaises}>Paises:{input.pais}</h4>
+          <h4 className={style.cardPaises}>Paises:{input.pais.join("-")}</h4>
         </div>
       </div>
     </div>

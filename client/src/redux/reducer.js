@@ -107,7 +107,7 @@ const rootReducer = (state = initialState, action) => {
       return { ...state, countries: copia };
     }
     case ORDEN_POBLACION: {
-      const poblacion = state.countries;
+      const poblacion = [...state.backup];
       const valuePoblacion = action.payload;
       let ordenados;
       if (valuePoblacion === "Menor Poblacion") {
@@ -124,7 +124,7 @@ const rootReducer = (state = initialState, action) => {
           return 0;
         });
       }
-      if (valuePoblacion === "Poblacion") ordenados = state.backup;
+      if (valuePoblacion === "Poblacion") ordenados = [...state.backup];
       return {
         ...state,
         countries: ordenados,
