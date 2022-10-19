@@ -71,6 +71,7 @@ export default function Paises() {
     e.preventDefault();
     dispatch(busqueda(actualiza));
     setActualiza(e.target.value);
+    setPaginaActual(1);
   };
   //----------------------------Paginado-------------------------------------------------------------//
 

@@ -180,7 +180,9 @@ export default function CrearActividades() {
             onChange={(e) => handelChange(e)}
           />
           {errors.nombre && <p className={style.errorName}>{errors.nombre}</p>}
-          <label className={style.LabelDificultad}>Dificultad</label>
+          <label className={style.LabelDificultad}>
+            Dificultad(entre 1 y 5)
+          </label>
           <input
             className={style.dificultad}
             type="number"
@@ -267,6 +269,19 @@ export default function CrearActividades() {
         <button className={style.borrar} onClick={(e) => handlerClear(e)}>
           <span>Borrrar</span>
         </button>
+      </div>
+      <div className={style.cardCreate}>
+        <div className={style.cardCreate1}>
+          <h3 className={style.cardNombre}>{input.nombre}</h3>
+          <h4 className={style.cardDificultad}>
+            Dificultad:{input.dificultad}
+          </h4>
+          <h4 className={style.cardDuracion}>Duracion:{input.duracion}</h4>
+          <h4 className={style.cardTemporada}>
+            Epoca del año:{input.temporada}
+          </h4>
+          <h4 className={style.cardPaises}>Paises:{input.pais}</h4>
+        </div>
       </div>
     </div>
   );

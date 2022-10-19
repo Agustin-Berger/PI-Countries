@@ -100,7 +100,7 @@
   width: 29vh;
   position: absolute;
   top: 29vh;
-  left: 28vh;
+  left: 29vh;
   padding: 10px 20px;
   border-radius: 7px;
   border: 2px solid #e0bb20;
@@ -117,7 +117,7 @@
   transition: all 0.2s ease-in;
 }
 .pais:hover {
-  background: #84181867;
+  background: #dcd9d967;
   box-shadow: 0 0 30px 5px #e0bb20;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -371,4 +371,78 @@
   position: absolute;
   top: 18vh;
   left: 40vh;
+}
+
+.cardNombre {
+  width: 30vh;
+  height: 10vh;
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 1vh;
+}
+.cardDificultad {
+  width: 20vh;
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 13vh;
+  left: 1vh;
+}
+.cardDuracion {
+  width: 20vh;
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 19vh;
+  left: 1vh;
+}
+.cardPaises {
+  width: 27vh;
+  height: 9vh;
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  position: absolute;
+  top: 32vh;
+  left: 1vh;
+}
+.cardTemporada {
+  margin-bottom: 0vh;
+  width: 27vh;
+  height: 7vh;
+  text-shadow: 0 0 5px #e0bb20, 0 0 5px #e0bb20;
+  color: #841818;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25vh;
+  left: 1vh;
+}
+
+.cardCreate {
+  width: 40vh;
+  height: 55vh;
+  float: right;
+  background-image: url(../imagenes/pngegg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 29vh;
+  right: 5vh;
+}
+.cardCreate1 {
+  background-color: #0000006b;
+  width: 30vh;
+  height: 44vh;
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
 }
